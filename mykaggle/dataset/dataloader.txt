@@ -1,0 +1,22 @@
+
+
+sampler:
+    负责生成读取对index序列
+
+
+Dataset:
+    负责 根据index 读取相应数据 （x,y）(作为后续model的输入)，并执行预处理
+    负责处理索引 （index）到样本（sample）映射的一个类
+
+DataloaderIter
+    负责协调多进程执行Dataset
+
+
+Dataloader
+    是最顶层的抽象
+
+==========================
+
+map-style
+
+iterable-style：适用于样本数量不确定
